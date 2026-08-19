@@ -1,0 +1,47 @@
+[package]
+name = "grubst"
+version = "2.0.0"
+edition = "2021"
+description = "GRUB Boot & Physical Security Hardening Tool — Lock your bootloader with a physical USB rescue key"
+license = "BUSL-1.1"
+authors = ["GRUBST Contributors"]
+repository = "https://github.com/sysdev-0/grubst"
+
+[dependencies]
+# GUI Framework (Dioxus)
+dioxus = { version = "0.5", features = ["desktop"] }
+tokio = { version = "1", features = ["full"] }
+
+# Cryptography
+sha2 = "0.10"
+pbkdf2 = { version = "0.12", features = ["simple"] }
+hmac = "0.12"
+rand = "0.8"
+hex = "0.4"
+subtle = "2"
+
+# System & Hardware
+sysinfo = "0.31"
+uuid = { version = "1", features = ["v4"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Linux System
+nix = { version = "0.28", features = ["fs", "ioctl", "user"] }
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+whoami = "1"
+tempfile = "3"
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
+codegen-units = 1

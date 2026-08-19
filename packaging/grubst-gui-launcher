@@ -1,0 +1,15 @@
+#!/bin/sh
+set -eu
+
+ts="$(date +%s)"
+base="/tmp/grubst-desktop-${ts}"
+env > "${base}.env"
+
+exec pkexec env \
+  DISPLAY="${DISPLAY:-}" \
+  XAUTHORITY="${XAUTHORITY:-}" \
+  WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-}" \
+  XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-}" \
+  DBUS_SESSION_BUS_ADDRESS="${DBUS_SESSION_BUS_ADDRESS:-}" \
+  /usr/local/bin/grubst \
+  >"${base}.out" 2>"${base}.err"

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=GRUBST
+GenericName=Boot Security Hardening
+Comment=Lock your GRUB bootloader with a USB rescue key
+Exec=/usr/local/bin/grubst-gui-launcher
+Icon=grubst
+Terminal=false
+Categories=System;Security;
+StartupNotify=true
