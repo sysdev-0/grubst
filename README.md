@@ -9,6 +9,7 @@
 ![License](https://img.shields.io/badge/license-BSL--1.1-blue)
 ![Rust](https://img.shields.io/badge/rust-stable-orange)
 ![Platform](https://img.shields.io/badge/platform-linux-green)
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal&logoColor=white)](https://paypal.me/AamirSaeed713)
 
 ---
 
@@ -190,6 +191,16 @@ src/
 │   ├── backup.rs           # Backup & restore
 │   └── update_guard.rs     # update-grub protection hook
 ```
+
+---
+
+## 💖 Support & Donations
+
+If you find **GRUBST** valuable and want to support its ongoing development, improvements, and maintenance, you can donate via PayPal:
+
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/AamirSaeed713)
+
+Your support is greatly appreciated!
 
 ---
 
