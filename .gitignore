@@ -1,0 +1,37 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+*.pdb
+
+# Cargo lock for applications (keep it for reproducible builds)
+# Cargo.lock is kept by default for binary projects
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+
+# Logs
+*.log
+
+# Private/Internal documentation (not for public)
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+vm_setup.txt
+desktop_install_commands.txt
+debug-pkexec-gui-not-launching.md
+remaining_work_open_source.md
+implementation_plan.md
+CHANGES_RTL.html
+CHANGES_RTL.txt
+SECURITY_CRITIQUE_RESPONSE_RTL.html
+
+# Temporary files
+*.tmp
+*.bak
