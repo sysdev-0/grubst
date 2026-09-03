@@ -216,3 +216,7 @@ See [SECURITY.md](SECURITY.md) for the threat model scope and update-guard notes
 
 **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.**
 The author is not responsible for any damage caused by using this software.
+
+
+[grubst.webm](https://github.com/user-attachments/assets/99a90bef-1cf4-4ee5-abe9-c2678164ebac)
+
