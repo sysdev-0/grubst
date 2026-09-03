@@ -41,10 +41,6 @@ Always have a backup recovery plan before using this tool.
 
 ---
 
-![GRUBST Demo](assets/grubst.gif)
-
----
-
 ## 📥 Installation
 
 > **🔒 Security Notice:** GRUBST does not provide pre-built binaries. You must build from source on your own machine for security and transparency.
