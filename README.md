@@ -50,8 +50,13 @@ Always have a backup recovery plan before using this tool.
 Follow these commands **one by one**:
 
 ```bash
-# 1. Install Git (if not installed)
-sudo apt install git
+# 1. Update package list and install prerequisites
+sudo apt update
+sudo apt install git curl build-essential pkg-config libgtk-3-dev \
+  libwebkit2gtk-4.1-dev pkexec
+
+# Note: On older Ubuntu/Debian releases, use libwebkit2gtk-4.0-dev if 4.1 is unavailable:
+# sudo apt install libwebkit2gtk-4.0-dev
 
 # 2. Clone the repository
 git clone https://github.com/sysdev-0/grubst.git
@@ -63,16 +68,10 @@ cd grubst
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
-# 5. Install system dependencies
-sudo apt update
-sudo apt install build-essential pkg-config libgtk-3-dev \
-  libwebkit2gtk-4.0-dev libayatana-appindicator3-dev \
-  librsvg2-dev polkit-1
-
-# 6. Build the project (takes 2-5 minutes)
+# 5. Build the project (takes 2-5 minutes)
 cargo build --release
 
-# 7. Install with desktop integration
+# 6. Install with desktop integration
 sudo make install
 ```
 
@@ -101,10 +100,10 @@ This will update the installed binary and refresh the desktop integration.
 
 - **Supported OS:** Ubuntu/Debian (other distributions may work but are not officially tested)
 - Linux with GRUB2 bootloader
-- Git
+- Git & Curl
 - Rust toolchain
-- GTK3 and WebKit2GTK libraries
-- Polkit (for GUI)
+- GTK3 and WebKit2GTK libraries (`libwebkit2gtk-4.1-dev` / `libwebkit2gtk-4.0-dev`)
+- Polkit (`pkexec`)
 - A USB drive (≥ 4 GB, **will be formatted during setup**)
 
 
