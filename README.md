@@ -53,10 +53,10 @@ Follow these commands **one by one**:
 # 1. Update package list and install prerequisites
 sudo apt update
 sudo apt install git curl build-essential pkg-config libgtk-3-dev \
-  libwebkit2gtk-4.1-dev pkexec
+  libwebkit2gtk-4.1-dev libxdo-dev pkexec
 
 # Note: On older Ubuntu/Debian releases, use libwebkit2gtk-4.0-dev if 4.1 is unavailable:
-# sudo apt install libwebkit2gtk-4.0-dev
+# sudo apt install libwebkit2gtk-4.0-dev libxdo-dev
 
 # 2. Clone the repository
 git clone https://github.com/sysdev-0/grubst.git
@@ -102,7 +102,7 @@ This will update the installed binary and refresh the desktop integration.
 - Linux with GRUB2 bootloader
 - Git & Curl
 - Rust toolchain
-- GTK3 and WebKit2GTK libraries (`libwebkit2gtk-4.1-dev` / `libwebkit2gtk-4.0-dev`)
+- GTK3, WebKit2GTK, and XDO libraries (`libwebkit2gtk-4.1-dev` / `libwebkit2gtk-4.0-dev`, `libxdo-dev`)
 - Polkit (`pkexec`)
 - A USB drive (≥ 4 GB, **will be formatted during setup**)
 
