@@ -21,8 +21,6 @@ Thumbs.db
 *.log
 
 # Private/Internal documentation (not for public)
-CODE_OF_CONDUCT.md
-CONTRIBUTING.md
 vm_setup.txt
 desktop_install_commands.txt
 debug-pkexec-gui-not-launching.md
